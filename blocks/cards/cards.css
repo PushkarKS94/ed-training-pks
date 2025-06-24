@@ -8,8 +8,15 @@
 }
 
 .cards > ul > li {
+  color: red;
+  display: flex;
+  flex-direction: column-reverse;
   border: 1px solid #dadada;
   background-color: var(--background-color);
+}
+
+html[dir='rtl'] .cards > ul > li {
+  color: green;
 }
 
 .cards .cards-card-body {
